@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+        <title>Saras</title>
+    <meta charset="UTF-8" /> 
+    <meta name="viewport"
+        content="width=device-width, 
+                initial-scale=0.1" /> 
+    <link href="styles.css" rel="stylesheet">
+	</head> 
+	<body> 
+        <center>
+        <div class="container">
+            <div class="row">
+                <h6 class="animate-charcter"> SARAS</h6>
+            </div>
+        </div>
+		</center>
+		<section> 
+			<div id="background-wrap">
+                <div class="bubble x1"></div>
+                <div class="bubble x2"></div>
+                <div class="bubble x3"></div>
+                <div class="bubble x4"></div>
+                <div class="bubble x5"></div>
+                <div class="bubble x6"></div>
+                <div class="bubble x7"></div>
+                <div class="bubble x8"></div>
+                <div class="bubble x9"></div>
+                <div class="bubble x10"></div>
+            </div>
+            <button class="glow-on-hover" type="button"><h1>Login</h1></button>
+            <button class="glow-on-hover" type="button"><h1>Register</h1></button>          
+		</section> 
+		<script type="text/javascript"> 
+			function createBubble() { 
+				const section = 
+					document.querySelector("Section"); 
+				const createElement = 
+					document.createElement("span"); 
+				var size = Math.random() * 60; 
+
+				createElement.style.animation = 
+				"animation 6s linear infinite"; 
+				createElement.style.width = 180 + size + "px"; 
+				createElement.style.height = 180 + size + "px"; 
+				createElement.style.left = 
+				Math.random() * innerWidth + "px"; 
+				section.appendChild(createElement); 
+
+				setTimeout(() => { 
+					createElement.remove(); 
+				}, 4000); 
+			} 
+			setInterval(createBubble, 100); 
+		</script> 
+	</body> 
+</html> 
