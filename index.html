@@ -6,15 +6,18 @@
     <meta name="viewport"
         content="width=device-width, 
                 initial-scale=0.1" /> 
-    <link href="styles.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
 	</head> 
 	<body> 
         <center>
         <div class="container">
             <div class="row">
-                <h6 class="animate-charcter"> SARAS</h6>
+				<br><br><br>
+                <label class="animate-charcter">SARAS</label>
             </div>
         </div>
+		<br>
+		<h1 class="subtitle">An Innovative Heart</h1>
 		</center>
 		<section> 
 			<div id="background-wrap">
@@ -29,10 +32,14 @@
                 <div class="bubble x9"></div>
                 <div class="bubble x10"></div>
             </div>
-            <button class="glow-on-hover" type="button"><h1>Login</h1></button>
-            <button class="glow-on-hover" type="button"><h1>Register</h1></button>          
 		</section> 
+		<br><br><br><br><br><br><br>
+		<center>
+		<button class="glow-on-hover" id="register" type="button" onclick="window.location.href = 'pages/login.html';"><h3>Login</h3></button>
+		<button class="glow-on-hover" id="login" type="button" onclick="window.location.href = 'pages/registration.php';"><h3>Register</h3></button>
+		</center>  
 		<script type="text/javascript"> 
+			/*Bubble*/
 			function createBubble() { 
 				const section = 
 					document.querySelector("Section"); 
